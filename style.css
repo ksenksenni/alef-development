@@ -226,3 +226,62 @@
                 background-color: #000000;
             }
         }
+        /* filter */
+        
+        .filter {
+            display: flex;
+            margin-top: 37px;
+            margin-bottom: 37px;
+        }
+        
+        @media(max-width: 510px) {
+            .filter {
+                display: block;
+            }
+        }
+        
+        .filter__text {
+            margin-right: 48px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21.94px;
+        }
+        
+        .filter__btn {
+            margin-right: 55px;
+            border: none;
+            background-color: #ffffff;
+            padding: 0;
+            padding-right: 30px;
+            position: relative;
+        }
+        
+        .filter__btn::after {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 45px;
+            width: 15px;
+            height: 9px;
+            background-position: -5px -5px;
+            background-image: url(img/spritesheet.png);
+            background-repeat: no-repeat;
+        }
+        
+        @media(max-width: 510px) {
+            .filter__btn::after {
+                top: 4px;
+            }
+        }
+        
+        .filter__btn:last-child:after {
+            left: 70px;
+        }
+        
+        .filter__btn:hover {
+            text-decoration: underline;
+        }
+        
+        .filter__btn:active {
+            opacity: 0.7;
+        }
