@@ -44,16 +44,16 @@
                 </div>
             </div>
 
-            <h2 class="header__caption">Найдено 349 котов</h2>
+            <h3 class="header__caption">Найдено 349 котов</h3>
         </div>
     </header>
 
     <main class="container">
-        <nav class="filter">
+        <div class="filter">
             <p class="filter__text">Сортировать по:</p>
             <button class="filter__btn">Цене</button>
             <button class="filter__btn">Возрасту</button>
-        </nav>
+        </div>
 
         <section>
             <div>
@@ -199,25 +199,30 @@
             <button>Вверх</button>
         </section>
 
-        <section>
-            <div>
-                <h2>Успей купить!</h2>
-                <h3>Подпишись и успей словить все акции</h3>
+        <section class="subscription">
+            <div class="subscription__text">
+                <h2 class="subscription__text-title">Успей купить!</h2>
+                <p class="subscription__text-caption">Подпишись и успей словить все акции</p>
             </div>
 
-            <form action="#">
+            <form action="#" method="POST" class="subscription__form">
 
-                <input type="text">
-                <label for="">Email</label>
+                <input class="subscription__form-input" type="text" name="email" id="email" required>
+                <label for="email" class="subscription__form-label">Email</label>
 
-                <button>Подписаться</button>
+                <button class="subscription__form-btn btn">Подписаться</button>
 
-                <div>
+
+                <div class="subscription__form__checkbox">
+                    <input class="subscription__form__checkbox-custom" type="checkbox" id="checkbox" name="checkbox" value="yes" required checked>
+                    <label for="checkbox">Подписаться на новости</label>
+                </div>
+                <!-- <div>
                     <label>
                       <input type="checkbox" name="" checked>
                       Подписаться на новости
                     </label>
-                </div>
+                </div> -->
             </form>
         </section>
     </main>
