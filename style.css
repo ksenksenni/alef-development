@@ -1,0 +1,228 @@
+        @font-face {
+            font-family: 'Montserrat-Regular';
+            src: url('fonts/Montserrat-Regular.eot');
+            src: url('fonts/Montserrat-Regular.eot') format('embedded-opentype'), url('fonts/Montserrat-Regular.woff2') format('woff2'), url('fonts/Montserrat-Regular.woff') format('woff'), url('fonts/Montserrat-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            font-family: 'Montserrat-Regular', sans-serif;
+            font-size: 12px;
+            line-height: 14.63px;
+            color: #000000;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+        
+        @media(max-width: 1200px) {
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        
+        .link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        .link:active {
+            opacity: 0.7;
+        }
+        /* header */
+        
+        .header {
+            background-image: url(img/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #000000;
+            color: #ffffff;
+            padding-bottom: 66px;
+        }
+        
+        .header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+        }
+        
+        @media(max-width: 785px) {
+            .header__top {
+                /* flex-direction: column; */
+                display: block;
+            }
+        }
+        
+        .header__top-nav {
+            display: flex;
+        }
+        
+        .header__top-nav-menu {
+            display: flex;
+            list-style: none;
+            margin-left: 120px;
+        }
+        
+        @media(max-width: 900px) {
+            .header__top-nav-menu {
+                margin-left: 40px;
+            }
+        }
+        
+        @media(max-width: 785px) {
+            .header__top-nav-menu {
+                display: none;
+            }
+        }
+        
+        .header__top-nav-menu-item {
+            margin-right: 40px;
+        }
+        
+        .header__top-nav-menu-link {
+            font-size: 18px;
+            line-height: 21.94px;
+        }
+        
+        .header__top-contact {
+            margin-top: 30px;
+            text-align: right;
+        }
+        
+        @media(max-width: 785px) {
+            .header__top-contact {
+                text-align: center;
+            }
+        }
+        
+        .header__top-contact-link {
+            font-size: 24px;
+            line-height: 29.26px;
+            font-weight: 700;
+        }
+        
+        .header__top-contact-text {
+            font-size: 18px;
+            line-height: 21.94px;
+            margin-top: 0;
+        }
+        
+        .header__caption {
+            font-size: 38px;
+            line-height: 46.32px;
+            margin-top: 30px;
+            margin-bottom: 0;
+        }
+        
+        @media(max-width: 785px) {
+            .header__caption {
+                text-align: center;
+            }
+        }
+        /* burger-menu */
+        
+        .burger-menu {
+            display: none;
+        }
+        
+        @media(max-width: 785px) {
+            .container-burger {
+                padding: 0;
+            }
+            .burger-menu {
+                display: block;
+            }
+            .menu-btn {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                width: 45px;
+                height: 45px;
+                cursor: pointer;
+                z-index: 1;
+            }
+            .menu-btn>span,
+            .menu-btn>span::before,
+            .menu-btn>span::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: #ffffff;
+                transition-duration: .25s;
+            }
+            .menu-btn>span::before {
+                content: '';
+                top: -8px;
+            }
+            .menu-btn>span::after {
+                content: '';
+                top: 8px;
+            }
+            .menubox {
+                display: block;
+                position: absolute;
+                visibility: hidden;
+                top: 0;
+                left: -100%;
+                width: 300px;
+                height: 100%;
+                margin: 0;
+                padding: 50px 0;
+                list-style: none;
+                background-color: #000000;
+                transition-duration: 1.2s;
+                z-index: 999;
+            }
+            .menu-item {
+                display: block;
+                padding: 12px 24px;
+                color: #ffffff;
+                font-family: 'Montserrat-Regular', sans-serif;
+                font-size: 20px;
+                font-weight: 400;
+                text-decoration: none;
+                transition-duration: 0.3s;
+                text-align: center;
+            }
+            .menu-item:hover {
+                text-decoration: underline;
+            }
+            .menu-item:active {
+                opacity: 0.7;
+            }
+            #menu-toggle {
+                opacity: 0;
+            }
+            #menu-toggle:checked~.menu-btn>span {
+                transform: rotate(45deg);
+            }
+            #menu-toggle:checked~.menu-btn>span::before {
+                top: 0;
+                transform: rotate(0);
+            }
+            #menu-toggle:checked~.menu-btn>span::after {
+                top: 0;
+                transform: rotate(90deg);
+            }
+            #menu-toggle:checked~.menubox {
+                visibility: visible;
+                left: 0;
+                top: 85px;
+                width: 100%;
+                height: 150px;
+                background-color: #000000;
+            }
+        }

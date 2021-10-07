@@ -10,26 +10,42 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="img/logo.png" alt="Логотип">
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-nav">
+                    <img src="img/logo.png" alt="Логотип">
 
-                <ul>
-                    <li><a href="#">Main</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Profile</a></li>
-                </ul>
+                    <ul class="header__top-nav-menu">
+                        <li class="header__top-nav-menu-item"><a href="#" class="header__top-nav-menu-link link">Main</a></li>
+                        <li class="header__top-nav-menu-item"><a href="#" class="header__top-nav-menu-link link">Gallery</a></li>
+                        <li class="header__top-nav-menu-item"><a href="#" class="header__top-nav-menu-link link">News</a></li>
+                        <li class="header__top-nav-menu-item"><a href="#" class="header__top-nav-menu-link link">Profile</a></li>
+                    </ul>
+
+                    <div class="burger-menu">
+                        <input id="menu-toggle" type="checkbox" />
+                        <label class="menu-btn" for="menu-toggle">
+                          <span></span>
+                        </label>
+
+                        <ul class="menubox">
+                            <li><a class="menu-item" href="#" class="link">Main</a></li>
+                            <li><a class="menu-item" href="#" class="link">Gallery</a></li>
+                            <li><a class="menu-item" href="#" class="link">News</a></li>
+                            <li><a class="menu-item" href="#" class="link">Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header__top-contact">
+                    <a href="tel:+544349000000" class="header__top-contact-link link">+544 3490 00000</a>
+                    <p class="header__top-contact-text">Звони скорее!</p>
+                </div>
             </div>
 
-            <div>
-                <a href="tel:+544349000000">+544 3490 00000</a>
-                <p>Звони скорее!</p>
-            </div>
+            <h2 class="header__caption">Найдено 349 котов</h2>
         </div>
-
-        <h2>Найдено 349 котов</h2>
     </header>
 
     <main>
