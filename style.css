@@ -29,6 +29,7 @@
     .link {
         color: #ffffff;
         text-decoration: none;
+        font-family: 'Montserrat-Regular', sans-serif;
     }
     
     .link:hover {
@@ -42,6 +43,7 @@
     .btn {
         height: 65px;
         border-radius: 10px;
+        font-family: 'Montserrat-Regular', sans-serif;
     }
     
     .btn:hover {
@@ -204,7 +206,6 @@
             display: block;
             padding: 12px 24px;
             color: #ffffff;
-            font-family: 'Montserrat-Regular', sans-serif;
             font-size: 20px;
             font-weight: 400;
             text-decoration: none;
@@ -261,6 +262,7 @@
     }
     
     .filter__btn {
+        font-family: 'Montserrat-Regular', sans-serif;
         margin-right: 55px;
         border: none;
         background-color: #ffffff;
@@ -310,6 +312,11 @@
         position: relative;
         max-width: 380px;
         margin-bottom: 23px;
+    }
+    
+    .cards__item-image {
+        width: 100%;
+        height: auto;
     }
     
     .cards__item-discount {
@@ -425,6 +432,25 @@
         background-color: #1f2021;
         border: 1px solid #1f2021;
         color: #ffffff;
+    }
+    /* other */
+    
+    .other {
+        text-align: center;
+        padding-top: 68px;
+        padding-bottom: 83px;
+    }
+    
+    .other__btn {
+        padding: 24px 129px;
+        background-color: #ffffff;
+        border: 1px solid #cacaca;
+        font-size: 14px;
+    }
+    
+    .other__btn:hover {
+        color: #6ebbd3;
+        border: 1px solid #6ebbd3;
     }
     /* subscription */
     
