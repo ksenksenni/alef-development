@@ -10,6 +10,7 @@ email.onchange = function(e) {
         noticeEmail.classList.remove("noshown");
         submitBtn.disabled = true;
     } else {
+        addNoShownClassToNotice();
         submitBtn.disabled = false;
     }
 }
@@ -21,9 +22,6 @@ function addNoShownClassToNotice() {
 email.oninput = addNoShownClassToNotice;
 
 form.onsubmit = function(evt) {
-    evt.preventDefault()
-    console.log("ghj")
-
+    evt.preventDefault();
     email.value = '';
-    addNoShownClassToNotice();
 };
