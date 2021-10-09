@@ -46,6 +46,10 @@
 
             <h3 class="header__caption">Найдено 349 котов</h3>
         </div>
+
+        <div class="noshown">
+            <p class="notice">Добавлено в избранное</p>
+        </div>
     </header>
 
     <main class="container">
@@ -55,9 +59,9 @@
             <button class="filter__btn">Возрасту</button>
         </div>
 
-        <div class="add">
-            <p class="add__text">Добавлено в избранное</p>
-        </div>
+        <!-- <div class="noshown">
+            <p class="notice">Добавлено в избранное</p>
+        </div> -->
 
         <section class="cards">
 
@@ -258,8 +262,14 @@
 
             <form action="#" method="POST" class="subscription__form">
 
+                <div class="noshown">
+                    <p class="notice notice-email">Некорректный email</p>
+                </div>
+
                 <input class="subscription__form-input" type="text" name="email" id="email" required>
                 <label for="email" class="subscription__form-label">Email</label>
+
+
 
                 <button class="subscription__form-btn btn">Подписаться</button>
 
