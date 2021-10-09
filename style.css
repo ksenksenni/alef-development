@@ -79,9 +79,10 @@
         top: -25px;
         left: 0;
     }
-    /* .noshown {
+    
+    .noshown {
         display: none;
-    } */
+    }
     /* header */
     
     .header {
@@ -305,8 +306,7 @@
         left: 45px;
         width: 15px;
         height: 9px;
-        background-position: -5px -5px;
-        background-image: url(img/spritesheet.png);
+        background-image: url(img/down.png);
         background-repeat: no-repeat;
     }
     
@@ -515,6 +515,26 @@
     .other__btn:hover {
         color: #6ebbd3;
         border: 1px solid #6ebbd3;
+    }
+    
+    .other__btn-up {
+        position: fixed;
+        z-index: 1;
+        bottom: 550px;
+        right: 172px;
+        width: 59px;
+        height: 59px;
+        background-color: #6ebbd3;
+        border-radius: 0;
+        border: 1px solid #6ebbd3;
+    }
+    
+    .other__btn-up:hover {
+        opacity: 0.7;
+    }
+    
+    .other__btn-up:active {
+        transform: scale(1.1);
     }
     /* subscription */
     
