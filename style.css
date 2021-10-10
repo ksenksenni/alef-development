@@ -546,13 +546,19 @@
     .other__btn-up {
         position: fixed;
         z-index: 1;
-        bottom: 550px;
-        right: 172px;
+        bottom: 50px;
+        right: 11%;
         width: 59px;
         height: 59px;
         background-color: #6ebbd3;
         border-radius: 0;
-        border: 1px solid #6ebbd3;
+        border: 1px solid #ffffff;
+    }
+    
+    @media(max-width: 1170px) {
+        .other__btn-up {
+            right: 10px;
+        }
     }
     
     .other__btn-up:hover {
